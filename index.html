@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Balog - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Nunito+Sans&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html">SOBRE MIM</a></li>
+        <li><a href="index.html">HABILIDADES</a></li>
+        <li><a href="index.html">PROJETOS</a></li>
+        <li><a href="index.html">CONTATO</a></li>
+    </ul>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar-middle"></span>
+        <span class="bar-last"></span>
+    </a>
+    <center>
+        <img src="IMG/profile.jpeg" alt="" width="200px" height="200px" class="profile"><br><br>
+        <h1>Olá, Meu nome é matheus Balog</h1>
+        <p style="color: white;">tenho 17 anos e sou técnico de informática, em São José dos Campos - SP. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Deleniti maiores odio nobis nemo impedit nostrum aliquam,
+            itaque quas neque aspernatur totam, minima ea. Consectetur nobis modi pariatur tenetur nulla iure!</p>
+        <a href="#" class="button-1">Baixar Currículo</a><br><br><br>
+        <a href="#link-sobremim">
+            <span class="material-icons">
+                expand_circle_down
+            </span>
+        </a>
+    </center>
+    <h1>OLÁ</h1>
+
+    <a name="link-sobremim"></a>
+
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbar = document.getElementsByClassName('navbar')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbar.classList.toggle('active')
+        })
+        function typeWriter(e) {
+            const textoArray = e.innerHTML.split('')
+            e.innerHTML = ''
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => e.innerHTML += letra, 68 * i);
+            });
+        }
+        const texto = document.querySelector('h1')
+        typeWriter(texto)
+
+    </script>
+</body>
+
+</html>
