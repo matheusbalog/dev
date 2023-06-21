@@ -190,7 +190,8 @@ footer{
 }
 /* BUTTONS */
 .button-cv {
-  
+   padding: 8px;
+   border: 2px solid rgb(242, 168, 29);
    background: rgb(242, 168, 29);
    background: linear-gradient(90deg, rgba(242, 168, 29, 1) 0%, rgba(242, 146, 29, 1) 49%);
 }
